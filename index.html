@@ -1,0 +1,818 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>كازينو كورنكا | قائمة مطاعم فاخرة</title>
+  <meta name="description" content="قائمة مطاعم فاخرة بتصميم عصري، رمز QR متحرك، وتجربة مستخدم أنيقة.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page-background">
+    <div class="bg-orbit orbit-1"></div>
+    <div class="bg-orbit orbit-2"></div>
+    <div class="bg-orbit orbit-3"></div>
+  </div>
+
+  <div class="loader" id="loader">
+    <div class="loader-ring"></div>
+    <p>Curating your exclusive dining experience…</p>
+  </div>
+
+  <header class="hero" id="home">
+    <nav class="nav">
+      <div class="brand">كازينو كورنكا</div>
+      <button class="nav-toggle" aria-label="فتح القائمة">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#about">المقبلات</a></li>
+        <li><a href="#menu">الطعام</a></li>
+        <li><a href="#drinks">المشروبات</a></li>
+        <li><a href="#hookah">الأراكيل</a></li>
+        <li><a href="#contact">التواصل</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-grid content-wrap">
+      <div class="hero-panel" data-reveal>
+        <div class="hero-video-title">Gazeno Goranga</div>
+        <div class="menu-video-frame" data-reveal>
+          <div class="video-frame">
+            <div class="video-placeholder">
+              <video class="video-player" autoplay controls muted playsinline>
+                <source src="IMG_5004.MP4" type="video/mp4">
+                متصفحك لا يدعم عرض الفيديو.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="section about" id="about">
+      <div class="section-heading" data-reveal>
+        <span class="eyebrow">المقبلات</span>
+        <h2>استمتع بأفضل المقبلات لدينا.</h2>
+      </div>
+      <div class="content-grid">
+        <div class="about-copy" data-reveal>
+          <p>استمتع بتشكيلة مقبلات مقسمة بعناية إلى قسمين: المقبلات الساخنة والمقبلات الباردة.</p>
+          <div class="feature-list">
+            <details class="feature-card">
+              <summary>مقبلات ساخنة</summary>
+              <p>اختر من المقبلات الساخنة التالية:</p>
+              <ul>
+                <li>لبلبي — 3000 د.ع</li>
+                <li>باجله خضرة — 3000 د.ع</li>
+                <li>باجله مقليه — 4000 د.ع</li>
+                <li>لوبيا — 3000 د.ع</li>
+                <li>جبن حلوم — 7000 د.ع</li>
+                <li>فستق مقلي — 7000 د.ع</li>
+              </ul>
+            </details>
+            <details class="feature-card">
+              <summary>مقبلات باردة</summary>
+              <p>اختر من المقبلات الباردة التالية:</p>
+              <ul>
+                <li>تبولة — 3000 د.ع</li>
+                <li>حمص بطحينة — 3000 د.ع</li>
+                <li>بابا غنوج — 3000 د.ع</li>
+                <li>معكرونيه — 3000 د.ع</li>
+                <li>حمص بلحمة — 9000 د.ع</li>
+                <li>حمص بل كص — 7000 د.ع</li>
+                <li>جاجيك — 3000 د.ع</li>
+                <li>بلم زلاطه عادي — 6000 د.ع</li>
+                <li>بلم زلاطه يوناني — 7000 د.ع</li>
+                <li>بلم زلاطه برهانيه — 7000 د.ع</li>
+                <li>بلم زلاطه فتوش — 7000 د.ع</li>
+                <li>ماعون زلاطه — 3000 د.ع</li>
+                <li>ماعون زلاطه يونانيه — 4000 د.ع</li>
+                <li>ماعون زلاطه برهانيه — 4000 د.ع</li>
+                <li>ماعون زلاطه فتوش — 4000 د.ع</li>
+                <li>جبن صباح — 5000 د.ع</li>
+                <li>ماعون طرشي — 3000 د.ع</li>
+              </ul>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section menu" id="menu">
+      <div class="section-heading" data-reveal>
+        <span class="eyebrow">الطعام</span>
+        <h2>استعرض قائمتنا في قسمين مميزة لكل فئة.</h2>
+      </div>
+      <div class="feature-list">
+        <details class="feature-card" open>
+          <summary>المشويات</summary>
+          <p>أفضل أطباق المشاوي لدينا مشوحة ومتبلة لتناسب كل ذوق.</p>
+          <ul>
+            <li>تكة لحم — 6000 د.ع</li>
+            <li>تكه بيانو — 6000 د.ع</li>
+            <li>ملفوف — 7000 د.ع</li>
+            <li>ليه — 6000 د.ع</li>
+            <li>معلاك — 6000 د.ع</li>
+            <li>جلاوي — 6000 د.ع</li>
+            <li>بيض غنم — 6000 د.ع</li>
+            <li>زرزور — 6000 د.ع</li>
+            <li>تكه دجاج صدر — 3000 د.ع</li>
+            <li>تكه دجاج فخذ — 3000 د.ع</li>
+            <li>أجنحة دجاج — 4000 د.ع</li>
+            <li>شيش لسان — 6000 د.ع</li>
+          </ul>
+        </details>
+        <details class="feature-card">
+          <summary>المأكولات الشرقية</summary>
+          <p>مجموعة من الأطباق الشرقية التقليدية مع نكهات مميزة وسعرات مناسبة.</p>
+          <ul>
+            <li>ديك — 50000 د.ع</li>
+            <li>هبيط — 20000 د.ع</li>
+            <li>ماعون كص — 10000 د.ع</li>
+            <li>لفة كص — 4000 د.ع</li>
+            <li>نفر قلي سبل — 30000 د.ع</li>
+            <li>نص نفر قلي سيل — 18000 د.ع</li>
+            <li>نفر جلفراي — 30000 د.ع</li>
+            <li>نص تفر جلفراي — 18000 د.ع</li>
+            <li>لسان فخاري — 8000 د.ع</li>
+            <li>لحم فخاري — 8000 د.ع</li>
+            <li>ماعون تمن — 2000 د.ع</li>
+            <li>ماعون برغل — 2000 د.ع</li>
+            <li>فنكر — 5000 د.ع</li>
+            <li>تشريب احمر — 20000 د.ع</li>
+          </ul>
+        </details>
+      </div>
+      <div class="section-heading" id="drinks" data-reveal>
+        <span class="eyebrow">المشروبات</span>
+        <h2>اختر من مشروباتنا المترفة المصنفة بعناية.</h2>
+      </div>
+      <div class="drinks-categories">
+        <div class="drink-category" data-reveal>
+          <h3>فودكا</h3>
+          <div class="cards-grid drinks-grid">
+            <article class="drink-card">
+              <h4>ربع كريكوز</h4>
+              <p>فودكا كريكوز فاخرة بطعم عميق وأنيق.</p>
+              <span class="price">20000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع بلفادير</h4>
+              <p>فودكا بلفادير بولندية مميزة برقة عالية.</p>
+              <span class="price">20000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع ايس كيوب</h4>
+              <p>فودكا ايس كيوب فاخرة بطعم منعش وناعم.</p>
+              <span class="price">10000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع ابسلوت</h4>
+              <p>فودكا ابسلوت سويدية فاخرة بنقاء عالي وطعم ممتاز.</p>
+              <span class="price">10000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>نص بطل كريكوز</h4>
+              <p>فودكا كريكوز بحجم وسط فاخرة للمناسبات والجلسات الخاصة.</p>
+              <span class="price">30000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل ابسلوت</h4>
+              <p>فودكا ابسلوت بحجم وسط فاخرة للمناسبات الخاصة برقة عالية.</p>
+              <span class="price">30000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>لتر كريكوز</h4>
+              <p>فودكا كريكوز بحجم كبير فاخرة للحفلات والمناسبات.</p>
+              <span class="price">75000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>لتر بلفادير</h4>
+              <p>فودكا بلفادير بحجم كبير فاخرة للحفلات والمناسبات الراقية.</p>
+              <span class="price">75000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>لتر ابسلوت</h4>
+              <p>فودكا ابسلوت بحجم كبير فاخرة للحفلات برقة عالية وطعم ممتاز.</p>
+              <span class="price">35000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بيك فودكا خلطة</h4>
+              <p>خلطة فودكا فاخرة من أجود أنواع الفودكا العالمية.</p>
+              <span class="price">5000 د.ع</span>
+            </article>
+          </div>
+        </div>
+        <div class="drink-category" data-reveal>
+          <h3>ويسكي</h3>
+          <div class="cards-grid drinks-grid">
+            <article class="drink-card">
+              <h4>ربع بلو ليبل</h4>
+              <p>ويسكي بلو ليبل فاخر بنكهة معتقة ومزيج متوازن.</p>
+              <span class="price">75000 د.ع</span>
+            </article>
+            <article class="drink-card">              <h4>بطل بلاك ليبل</h4>
+              <p>ويسكي بلاك ليبل الفاخر بطعم عميق وغني ومزيج متوازن.</p>
+              <span class="price">60000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>لتر بلاك ليبل</h4>
+              <p>ويسكي بلاك ليبل بحجم لتر فاخر للمناسبات والحفلات الراقية.</p>
+              <span class="price">75000 د.ع</span>
+            </article>
+            <article class="drink-card">              <h4>ربع كولد ليبل</h4>
+              <p>ويسكي كولد ليبل ناعم مع لمسة توتية وتوابل خفيفة.</p>
+              <span class="price">30000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل كولد ليبل</h4>
+              <p>ويسكي كولد ليبل بحجم كبير فاخر للمناسبات الراقية.</p>
+              <span class="price">100000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل بلو ليبل</h4>
+              <p>ويسكي بلو ليبل بحجم كبير للمناسبات الفاخرة.</p>
+              <span class="price">300000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع بلاتينيوم</h4>
+              <p>ويسكي بلاتينيوم فخم مع قوام ناعم وطابع مدخن خفيف.</p>
+              <span class="price">30000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع كلانفدتش</h4>
+              <p>ويسكي كلانفدتش راقي مع لمسة فواكه جافة وخشب السنديان.</p>
+              <span class="price">30000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل كلانفدتش</h4>
+              <p>ويسكي كلانفدتش بحجم كبير فاخر للمناسبات والحفلات.</p>
+              <span class="price">60000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع شيفاز 18</h4>
+              <p>ويسكي شيفاز 18 عامًا لطيف ومعقد بالعنب والعسل.</p>
+              <span class="price">30000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل شيفاز 18</h4>
+              <p>ويسكي شيفاز 18 بطعم فخم ومتماسك في العرض الكبير.</p>
+              <span class="price">100000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>لتر شيفاز 18</h4>
+              <p>ويسكي شيفاز 18 بحجم لتر للمناسبات الفاخرة.</p>
+              <span class="price">120000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>دبل ليبل</h4>
+              <p>ويسكي دبل ليبل الكلاسيكي بتركيبة ذات لقمة مزدوجة.</p>
+              <span class="price">100000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بلاك ليبل تكل</h4>
+              <p>ويسكي بلاك ليبل بحجم كبير للحفلات الراقية.</p>
+              <span class="price">100000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع جاك دانيلز</h4>
+              <p>ويسكي جاك دانيلز الأمريكي بطابع الكراميل والنكهة الخشبية المميزة.</p>
+              <span class="price">18000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل جاك دانيلز</h4>
+              <p>ويسكي جاك دانيلز بحجم كبير للمناسبات الفاخرة.</p>
+              <span class="price">50000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع ريد ليبل</h4>
+              <p>ويسكي ريد ليبل الكلاسيكي بنكهة متوازنة وحادة قليلاً.</p>
+              <span class="price">10000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل ريد ليبل</h4>
+              <p>ويسكي ريد ليبل بحجم كبير للمناسبات الفاخرة.</p>
+              <span class="price">30000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>لتر ريد ليبل</h4>
+              <p>ويسكي ريد ليبل بحجم لتر للحفلات والمناسبات الراقية.</p>
+              <span class="price">35000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع كرانتس</h4>
+              <p>ويسكي كرانتس المميز بطابع جوزي وناعم.</p>
+              <span class="price">8000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل كرانتس</h4>
+              <p>ويسكي كرانتس بحجم كبير للمناسبات والحفلات الراقية.</p>
+              <span class="price">25000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع بي جي</h4>
+              <p>ويسكي بي جي الخفيف مع نكهة معتدلة وسلسة.</p>
+              <span class="price">6000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل بي جي</h4>
+              <p>ويسكي بي جي بحجم كبير للمناسبات الفاخرة.</p>
+              <span class="price">20000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع شيفاز 12</h4>
+              <p>ويسكي شيفاز 12 عامًا ناعم وثري بطابع الفانيلا والتوابل الخفيفة.</p>
+              <span class="price">18000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع بلاك ليبل</h4>
+              <p>ويسكي بلاك ليبل الكلاسيكي بمزيج غني ومتوازن.</p>
+              <span class="price">18000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع جيمسون</h4>
+              <p>ويسكي جيمسون الإيرلندي بنكهة ناعمة وحلوة مع لمسة فواكه.</p>
+              <span class="price">15000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل جيمسون</h4>
+              <p>ويسكي جيمسون بحجم كبير للمناسبات والحفلات الراقية.</p>
+              <span class="price">50000 د.ع</span>
+            </article>
+          </div>
+        </div>
+        <div class="drink-category">
+          <h3 id="arak">عرق</h3>
+          <div class="cards-grid drinks-grid">
+            <article class="drink-card">
+              <h4>ربع بيلر بي تكل</h4>
+              <p>عرق بيلر بي تكل بحجم ربع.</p>
+              <span class="price">40000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل بيلر بي تكل</h4>
+              <p>عرق بيلر بي تكل بحجم كبير للمناسبات.</p>
+              <span class="price">100000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع بيلر بي عادي</h4>
+              <p>عرق بيلر بي التقليدي بحجم ربع.</p>
+              <span class="price">20000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل بيلر بي عادي</h4>
+              <p>عرق بيلر بي التقليدي بحجم كبير.</p>
+              <span class="price">60000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل يني سيري تكل</h4>
+              <p>عرق يني سيري تكل بحجم كبير.</p>
+              <span class="price">75000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع يني سيري تكل</h4>
+              <p>عرق يني سيري تكل بحجم ربع.</p>
+              <span class="price">30000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع يني سيري عادي</h4>
+              <p>نسخة يني سيري التقليدية بحجم ربع.</p>
+              <span class="price">15000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل يني راكي عادي</h4>
+              <p>عرق يني راكي التقليدي بحجم كبير.</p>
+              <span class="price">40000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع يني راكي عادي</h4>
+              <p>نسخة يني راكي بحجم ربع.</p>
+              <span class="price">15000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل تكرداغ ذهبي</h4>
+              <p>عرق تكرداغ الذهبي بحجم كبير.</p>
+              <span class="price">60000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع تكرداغ ذهبي</h4>
+              <p>تكرداغ ذهبي بحجم ربع.</p>
+              <span class="price">15000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل تكرداغ عادي</h4>
+              <p>تكرداغ التقليدي بحجم كبير.</p>
+              <span class="price">40000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع تكرداغ عادي</h4>
+              <p>تكرداغ التقليدي بحجم ربع.</p>
+              <span class="price">10000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل اوزو كولد</h4>
+              <p>اوزو كولد بحجم كبير.</p>
+              <span class="price">30000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع اوزو كولد</h4>
+              <p>اوزو كولد بحجم ربع.</p>
+              <span class="price">10000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل اوزو زيرو</h4>
+              <p>اوزو زيرو بحجم كبير.</p>
+              <span class="price">30000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع اوزو زيرو</h4>
+              <p>اوزو زيرو بحجم ربع.</p>
+              <span class="price">10000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل اوزو زيرو أخضر</h4>
+              <p>اوزو زيرو الأخضر بحجم كبير.</p>
+              <span class="price">30000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع اوزو زيرو أخضر</h4>
+              <p>اوزو زيرو الأخضر بحجم ربع.</p>
+              <span class="price">10000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>لتر بلوماري</h4>
+              <p>بلوماري بحجم لتر.</p>
+              <span class="price">30000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل بلوماري</h4>
+              <p>بلوماري بحجم كبير.</p>
+              <span class="price">25000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>نص لتر بلوماري</h4>
+              <p>بلوماري بحجم نص لتر.</p>
+              <span class="price">20000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع بلوماري</h4>
+              <p>بلوماري بحجم ربع.</p>
+              <span class="price">8000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل توما</h4>
+              <p>توما بحجم كبير.</p>
+              <span class="price">20000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع توما</h4>
+              <p>توما بحجم ربع.</p>
+              <span class="price">6000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>لتر اوزو 7</h4>
+              <p>اوزو 7 بحجم لتر.</p>
+              <span class="price">20000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل اوزو 7</h4>
+              <p>اوزو 7 بحجم كبير.</p>
+              <span class="price">15000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع اوزو 7</h4>
+              <p>اوزو 7 بحجم ربع.</p>
+              <span class="price">6000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل كيفي</h4>
+              <p>كيفي بحجم كبير.</p>
+              <span class="price">15000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع كيفي</h4>
+              <p>كيفي بحجم ربع.</p>
+              <span class="price">6000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>لتر مالتيمي</h4>
+              <p>مالتيمي بحجم لتر.</p>
+              <span class="price">20000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل مالتيمي</h4>
+              <p>مالتيمي بحجم كبير.</p>
+              <span class="price">15000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع مالتيمي</h4>
+              <p>مالتيمي بحجم ربع.</p>
+              <span class="price">6000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل ايفي أخضر</h4>
+              <p>ايفي أخضر بحجم كبير.</p>
+              <span class="price">40000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع جلنار</h4>
+              <p>جلنار بحجم ربع.</p>
+              <span class="price">6000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل جلنار</h4>
+              <p>جلنار بحجم كبير للمناسبات.</p>
+              <span class="price">15000 د.ع</span>
+            </article>
+          </div>
+        </div>
+        <div class="drink-category" data-reveal>
+          <h3>بيرة</h3>
+          <div class="cards-grid drinks-grid">
+            <article class="drink-card">
+              <h4>كرونا</h4>
+              <p>بيرة كرونا بطعم خفيف ومنعش.</p>
+              <span class="price">4000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل هنيكن</h4>
+              <p>هنيكن بحجم كبير.</p>
+              <span class="price">3000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>هنيكن قوطية</h4>
+              <p>هنيكن في قوطية.</p>
+              <span class="price">3000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>هنيكن فافون</h4>
+              <p>هنيكن فافون بطعم مميز.</p>
+              <span class="price">4000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>هنيكن سلفر</h4>
+              <p>هنيكن سلفر المميزة.</p>
+              <span class="price">3000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ايفس مالت</h4>
+              <p>ايفس مالت بطعم قوي.</p>
+              <span class="price">2500 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ايفس قوطية</h4>
+              <p>ايفس في قوطية.</p>
+              <span class="price">2000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>كارلوس قوطية</h4>
+              <p>كارلوس في قوطية.</p>
+              <span class="price">2500 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>كارلوس قوطية صغير</h4>
+              <p>كارلوس بحجم صغير.</p>
+              <span class="price">2000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ميلر</h4>
+              <p>بيرة ميلر المميزة.</p>
+              <span class="price">2500 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>كرومباخ</h4>
+              <p>بيرة كرومباخ الفاخرة.</p>
+              <span class="price">3000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بومونتي</h4>
+              <p>بيرة بومونتي بطعم متوازن.</p>
+              <span class="price">3000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>توبورك</h4>
+              <p>بيرة توبورك الخفيفة.</p>
+              <span class="price">2500 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل بدوايزر</h4>
+              <p>بدوايزر بحجم كبير.</p>
+              <span class="price">3000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>درافت كرومباخ كبير</h4>
+              <p>درافت كرومباخ بحجم كبير.</p>
+              <span class="price">6000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>درافت كرومباخ صغير</h4>
+              <p>درافت كرومباخ بحجم صغير.</p>
+              <span class="price">4000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>كارلوس بطل صغير</h4>
+              <p>كارلوس بحجم كبير صغير.</p>
+              <span class="price">2500 د.ع</span>
+            </article>
+          </div>
+        </div>
+        <div class="drink-category" data-reveal>
+          <h3>الشراب</h3>
+          <div class="cards-grid drinks-grid">
+            <article class="drink-card">
+              <h4>بطل خمر جي بي أحمر</h4>
+              <p>خمر جي بي الأحمر بحجم كبير.</p>
+              <span class="price">20000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل خمر جي بي أحضر</h4>
+              <p>خمر جي بي الأخضر بحجم كبير.</p>
+              <span class="price">20000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع خمر جي بي أحضر</h4>
+              <p>خمر جي بي الأخضر بحجم ربع.</p>
+              <span class="price">6000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع خمر جي بي أحمر</h4>
+              <p>خمر جي بي الأحمر بحجم ربع.</p>
+              <span class="price">6000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع خمر محلي</h4>
+              <p>خمر محلي بحجم ربع.</p>
+              <span class="price">6000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل خمر محلي</h4>
+              <p>خمر محلي بحجم كبير.</p>
+              <span class="price">20000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ربع يكر ماستر</h4>
+              <p>يكر ماستر بحجم ربع.</p>
+              <span class="price">15000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>بطل يكر ماستر</h4>
+              <p>يكر ماستر بحجم كبير.</p>
+              <span class="price">50000 د.ع</span>
+            </article>
+          </div>
+        </div>
+        <div class="drink-category" data-reveal>
+          <h3>مشروبات باردة وساخنة</h3>
+          <div class="cards-grid drinks-grid">
+            <article class="drink-card">
+              <h4>كولا</h4>
+              <p>كولا باردة ومنعشة.</p>
+              <span class="price">1000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>فانتا</h4>
+              <p>فانتا بنكهة الفواكه الباردة.</p>
+              <span class="price">1000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>سبرايت</h4>
+              <p>سبرايت باردة ومنعشة.</p>
+              <span class="price">1000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>شلغم حار</h4>
+              <p>مشروب شلغم حار للتدفئة.</p>
+              <span class="price">3000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>عصير تاميك كرز</h4>
+              <p>عصير تاميك كرز منعش.</p>
+              <span class="price">2000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>عصير طازج رمان</h4>
+              <p>عصير رمان طازج وطبيعي.</p>
+              <span class="price">2000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>باربيكان</h4>
+              <p>مشروب باربيكان بنكهة فريدة.</p>
+              <span class="price">2500 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>كولا زيرو</h4>
+              <p>كولا زيرو بدون سكر.</p>
+              <span class="price">1000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>وايت تايجر</h4>
+              <p>مشروب وايت تايجر المنعش.</p>
+              <span class="price">2500 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>تايجر</h4>
+              <p>مشروب تايجر المنعش.
+</p>
+              <span class="price">2500 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ريد بول</h4>
+              <p>ريد بول للطاقة.</p>
+              <span class="price">3000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>عصير برتقال طبيعي</h4>
+              <p>عصير برتقال طبيعي طازج.</p>
+              <span class="price">3000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>عصير ليمون طبيعي</h4>
+              <p>عصير ليمون طبيعي منعش.</p>
+              <span class="price">5000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>عصير سندي طبيعي</h4>
+              <p>عصير سندي طبيعي طازج.</p>
+              <span class="price">3000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>عصير طبيعي كوكتيل</h4>
+              <p>كوكتيل عصير طبيعي متنوع.</p>
+              <span class="price">4000 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>ماء</h4>
+              <p>ماء بارد للشرب.</p>
+              <span class="price">500 د.ع</span>
+            </article>
+            <article class="drink-card">
+              <h4>جاي</h4>
+              <p>شاي ساخن ومنعش.</p>
+              <span class="price">500 د.ع</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="hookah">
+      <div class="section-heading" data-reveal>
+        <span class="eyebrow">الأراكيل</span>
+        <h2>استمتع بأشهى أنواع الأراكيل والنكهات المتنوعة.</h2>
+      </div>
+      <div class="feature-list">
+        <details class="feature-card" open>
+          <summary>أراكيل</summary>
+          <p>تشكيلة متنوعة من أفضل أنواع الأراكيل مع نكهات متعددة.</p>
+          <ul>
+            <li>اركيلة انكليزي — 12000 د.ع</li>
+            <li>اركيلة علج نعناع خلطة — 12000 د.ع</li>
+            <li>اركيلة ليمون نعناع — 12000 د.ع</li>
+            <li>اركيلة تفاحتين — 12000 د.ع</li>
+            <li>اركيلة طبيعي — 16000 د.ع</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <!-- QR code section removed per request -->
+
+    <section class="section contact" id="contact">
+      <div class="section-heading" data-reveal>
+        <span class="eyebrow">التواصل</span>
+        <h2>احجز طاولتك أو أرسل طلبًا خاصًا.</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card" data-reveal>
+          <h3>كازينو كورنكا</h3>
+          <p>للحجز للعوائل: <strong>07503428860</strong></p>
+          <p>صباح: 07504399518</p>
+          <p>أمير: 07504906802</p>
+          <p>ماركو: 07503021595</p>
+        </div>
+        <div class="contact-card glass" data-reveal>
+          <h3>ساعات العمل</h3>
+          <p>6:00 م إلى 2:00 ص يومياً</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-copy">
+      <p>كازينو كورنكا © 2026</p>
+      <p>مصمم لعشاء استثنائي وفخامة لا تُنسى.</p>
+    </div>
+  </footer>
+</body>
+</html>
